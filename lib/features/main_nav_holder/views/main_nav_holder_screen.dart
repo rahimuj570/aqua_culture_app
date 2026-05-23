@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:aqua_culture_app/app/constants/app_colors.dart';
+import 'package:aqua_culture_app/app/setup_network_caller.dart';
 import 'package:aqua_culture_app/features/main_nav_holder/view_models/main_nav_holder_provider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -28,6 +29,10 @@ class _MainNavHolderScreenState extends State<MainNavHolderScreen>
 
   @override
   Widget build(BuildContext context) {
+    print('MainNavHolderScreen');
+    getNetworkCaller().getCall(
+      uri: 'https://jsonplaceholder.typicode.com/todos/1',
+    );
     return Consumer<MainNavHolderProvider>(
       builder: (context, provider, child) => Scaffold(
         body: Stack(
