@@ -1,5 +1,6 @@
 import 'package:aqua_culture_app/app/app_theme.dart';
 import 'package:aqua_culture_app/features/auth/view_models/auth_provider.dart';
+import 'package:aqua_culture_app/features/auth/view_models/login_provider.dart';
 import 'package:aqua_culture_app/features/auth/view_models/register_provider.dart';
 import 'package:aqua_culture_app/features/main_nav_holder/view_models/main_nav_holder_provider.dart';
 import 'package:aqua_culture_app/features/welcome/views/screens/splash_screen.dart';
@@ -18,6 +19,7 @@ class AquaCultureApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => MainNavHolderProvider()),
         ChangeNotifierProvider(create: (_) => AuthProvider()),
         ChangeNotifierProvider(create: (_) => RegisterProvider()),
+        ChangeNotifierProvider(create: (_) => LoginProvider()),
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,

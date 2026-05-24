@@ -25,6 +25,19 @@ class _RegisterScreenState extends State<RegisterScreen> {
   TextEditingController locationTEC = TextEditingController();
   TextEditingController passwordTEC = TextEditingController();
   TextEditingController confirmPasswordTEC = TextEditingController();
+
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    nameTEC.dispose();
+    phoneTEC.dispose();
+    locationTEC.dispose();
+    passwordTEC.dispose();
+    confirmPasswordTEC.dispose();
+
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -160,7 +173,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 ),
                 SizedBox(height: 23.h),
                 filledButtonPrimary(
-                  title: 'Login',
+                  title: 'Register',
                   onTap: registerProvider.isTermsAccepted ? () {} : null,
                 ),
                 SizedBox(height: 12.h),
