@@ -2,7 +2,7 @@ import 'dart:math';
 
 import 'package:aqua_culture_app/app/constants/app_colors.dart';
 import 'package:aqua_culture_app/app/setup_network_caller.dart';
-import 'package:aqua_culture_app/features/main_nav_holder/view_models/main_nav_holder_provider.dart';
+import 'package:aqua_culture_app/features/farmer_role_features/main_nav_holder/view_models/main_nav_holder_provider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_material_design_icons/flutter_material_design_icons.dart';

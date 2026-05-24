@@ -4,7 +4,7 @@ import 'package:aqua_culture_app/features/auth/view_models/login_provider.dart';
 import 'package:aqua_culture_app/features/auth/view_models/otp_verification_provider.dart';
 import 'package:aqua_culture_app/features/auth/view_models/register_provider.dart';
 import 'package:aqua_culture_app/features/auth/view_models/set_password_provider.dart';
-import 'package:aqua_culture_app/features/main_nav_holder/view_models/main_nav_holder_provider.dart';
+import 'package:aqua_culture_app/features/farmer_role_features/main_nav_holder/view_models/main_nav_holder_provider.dart';
 import 'package:aqua_culture_app/features/welcome/views/screens/splash_screen.dart';
 
 import 'package:flutter/material.dart';
