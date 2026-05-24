@@ -62,7 +62,7 @@ class _MainNavHolderScreenState extends State<MainNavHolderScreen>
                         width: 350.w,
 
                         decoration: BoxDecoration(
-                          color: Color(0xffa1ddca),
+                          color: Color(0xffc4d4e2),
                           shape: BoxShape.circle,
                         ),
 
@@ -107,7 +107,7 @@ class _MainNavHolderScreenState extends State<MainNavHolderScreen>
         floatingActionButton: FloatingActionButton(
           elevation: 1,
           shape: const CircleBorder(),
-          backgroundColor: isMenuOpen ? AppColors.green : Colors.white,
+          backgroundColor: isMenuOpen ? AppColors.appThemeColor : Colors.white,
           foregroundColor: isMenuOpen ? Colors.white : AppColors.appThemeColor,
 
           onPressed: () {
