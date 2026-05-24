@@ -2,7 +2,6 @@ import 'package:aqua_culture_app/app/constants/app_colors.dart';
 import 'package:aqua_culture_app/features/common_role_features/common/views/widgets/home_top_hero_section.dart';
 import 'package:aqua_culture_app/features/farmer_role_features/common/widgets/left_bordered_rounded_status_card.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_material_design_icons/flutter_material_design_icons.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class FarmerHomeScreen extends StatelessWidget {
