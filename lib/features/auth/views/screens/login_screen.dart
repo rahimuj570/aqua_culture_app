@@ -1,7 +1,6 @@
 import 'package:aqua_culture_app/app/constants/app_colors.dart';
 import 'package:aqua_culture_app/features/auth/view_models/auth_provider.dart';
 import 'package:aqua_culture_app/features/auth/view_models/login_provider.dart';
-import 'package:aqua_culture_app/features/auth/view_models/register_provider.dart';
 import 'package:aqua_culture_app/features/auth/views/screens/register_screen.dart';
 import 'package:aqua_culture_app/features/auth/views/widgets/toggle_farmer_buyer_button_widget.dart';
 import 'package:aqua_culture_app/features/auth/views/widgets/top_section_logo_n_title_widget.dart';
