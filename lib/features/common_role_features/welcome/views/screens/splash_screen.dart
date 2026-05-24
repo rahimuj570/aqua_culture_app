@@ -1,4 +1,4 @@
-import 'package:aqua_culture_app/features/welcome/views/screens/welcome_screen.dart';
+import 'package:aqua_culture_app/features/common_role_features/welcome/views/screens/welcome_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
 

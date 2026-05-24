@@ -1,6 +1,6 @@
 import 'package:aqua_culture_app/app/constants/app_colors.dart';
-import 'package:aqua_culture_app/features/auth/views/screens/login_screen.dart';
-import 'package:aqua_culture_app/features/common/views/widgets/filled_button_primary.dart';
+import 'package:aqua_culture_app/features/common_role_features/auth/views/screens/login_screen.dart';
+import 'package:aqua_culture_app/features/common_role_features/common/views/widgets/filled_button_primary.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

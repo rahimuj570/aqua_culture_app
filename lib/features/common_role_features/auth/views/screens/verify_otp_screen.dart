@@ -1,12 +1,12 @@
 import 'dart:async';
 
 import 'package:aqua_culture_app/app/constants/app_colors.dart';
-import 'package:aqua_culture_app/features/auth/view_models/otp_verification_provider.dart';
-import 'package:aqua_culture_app/features/auth/views/screens/set_password_screen.dart';
-import 'package:aqua_culture_app/features/auth/views/screens/verification_successful_screen.dart';
-import 'package:aqua_culture_app/features/auth/views/widgets/auth_appbar_widget.dart';
-import 'package:aqua_culture_app/features/auth/views/widgets/top_section_logo_n_title_widget.dart';
-import 'package:aqua_culture_app/features/common/views/widgets/filled_button_primary.dart';
+import 'package:aqua_culture_app/features/common_role_features/auth/view_models/otp_verification_provider.dart';
+import 'package:aqua_culture_app/features/common_role_features/auth/views/screens/set_password_screen.dart';
+import 'package:aqua_culture_app/features/common_role_features/auth/views/screens/verification_successful_screen.dart';
+import 'package:aqua_culture_app/features/common_role_features/auth/views/widgets/auth_appbar_widget.dart';
+import 'package:aqua_culture_app/features/common_role_features/auth/views/widgets/top_section_logo_n_title_widget.dart';
+import 'package:aqua_culture_app/features/common_role_features/common/views/widgets/filled_button_primary.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

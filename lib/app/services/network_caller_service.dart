@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import 'package:aqua_culture_app/app/models/logger_model.dart';
 import 'package:aqua_culture_app/app/models/network_response_model.dart';
-import 'package:aqua_culture_app/features/auth/services/auth_prefs_service.dart';
+import 'package:aqua_culture_app/features/common_role_features/auth/services/auth_prefs_service.dart';
 import 'package:http/http.dart';
 
 class NetworkCallerService {

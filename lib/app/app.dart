@@ -1,11 +1,11 @@
 import 'package:aqua_culture_app/app/app_theme.dart';
-import 'package:aqua_culture_app/features/auth/view_models/auth_provider.dart';
-import 'package:aqua_culture_app/features/auth/view_models/login_provider.dart';
-import 'package:aqua_culture_app/features/auth/view_models/otp_verification_provider.dart';
-import 'package:aqua_culture_app/features/auth/view_models/register_provider.dart';
-import 'package:aqua_culture_app/features/auth/view_models/set_password_provider.dart';
+import 'package:aqua_culture_app/features/common_role_features/auth/view_models/auth_provider.dart';
+import 'package:aqua_culture_app/features/common_role_features/auth/view_models/login_provider.dart';
+import 'package:aqua_culture_app/features/common_role_features/auth/view_models/otp_verification_provider.dart';
+import 'package:aqua_culture_app/features/common_role_features/auth/view_models/register_provider.dart';
+import 'package:aqua_culture_app/features/common_role_features/auth/view_models/set_password_provider.dart';
 import 'package:aqua_culture_app/features/farmer_role_features/main_nav_holder/view_models/main_nav_holder_provider.dart';
-import 'package:aqua_culture_app/features/welcome/views/screens/splash_screen.dart';
+import 'package:aqua_culture_app/features/common_role_features/welcome/views/screens/splash_screen.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

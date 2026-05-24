@@ -1,5 +1,5 @@
 import 'package:aqua_culture_app/app/constants/app_colors.dart';
-import 'package:aqua_culture_app/features/auth/view_models/auth_provider.dart';
+import 'package:aqua_culture_app/features/common_role_features/auth/view_models/auth_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
