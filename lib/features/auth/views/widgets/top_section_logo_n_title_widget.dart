@@ -5,11 +5,12 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 Widget topSectionLogoAndTitleWidget({
   required String title,
   required String subtitle,
+  bool removeTopPadding = false,
 }) => Center(
   child: Column(
     crossAxisAlignment: CrossAxisAlignment.center,
     children: [
-      SizedBox(height: 100.h),
+      if (removeTopPadding == false) SizedBox(height: 100.h),
       Image.asset('assets/images/logo.png', height: 68, width: 68),
       SizedBox(height: 12.h),
 

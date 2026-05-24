@@ -54,6 +54,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       SizedBox(height: 20.h),
 
                       inputFormFieldWidget(
+                        keyboardType: TextInputType.phone,
                         prefixIcon: MdiIcons.phoneOutline,
                         title: 'Phone Number',
                         isRequired: true,

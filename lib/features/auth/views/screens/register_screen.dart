@@ -68,6 +68,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         controller: nameTEC,
                       ),
                       inputFormFieldWidget(
+                        keyboardType: TextInputType.phone,
                         prefixIcon: MdiIcons.phoneOutline,
                         title: 'Phone Number',
                         isRequired: true,
