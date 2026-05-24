@@ -2,7 +2,10 @@ import 'package:aqua_culture_app/app/constants/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-Widget topSectionLogoAndTitleWidget() => Center(
+Widget topSectionLogoAndTitleWidget({
+  required String title,
+  required String subtitle,
+}) => Center(
   child: Column(
     crossAxisAlignment: CrossAxisAlignment.center,
     children: [
@@ -33,12 +36,12 @@ Widget topSectionLogoAndTitleWidget() => Center(
       ),
       SizedBox(height: 20.h),
       Text(
-        'Create Account',
+        title,
         style: TextStyle(fontSize: 20.sp, fontWeight: .bold),
       ),
       SizedBox(height: 4.h),
       Text(
-        'Join AquaCulture to start managing your farms',
+        subtitle,
         textAlign: .center,
         style: TextStyle(color: AppColors.greyText, fontSize: 14.sp),
       ),

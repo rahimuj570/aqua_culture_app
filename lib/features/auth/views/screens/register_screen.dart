@@ -47,7 +47,10 @@ class _RegisterScreenState extends State<RegisterScreen> {
           child: Consumer2<AuthProvider, RegisterProvider>(
             builder: (context, authProvider, registerProvider, child) => Column(
               children: [
-                topSectionLogoAndTitleWidget(),
+                topSectionLogoAndTitleWidget(
+                  title: 'Create Account',
+                  subtitle: 'Join AquaCulture to start managing your farms',
+                ),
                 toggleFarmerBuyerButtonWidget(context),
                 SizedBox(height: 40.h),
                 Form(
