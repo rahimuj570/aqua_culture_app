@@ -2,7 +2,7 @@ import 'package:aqua_culture_app/app/constants/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-Widget topSectionLogoAndTitle() => Center(
+Widget topSectionLogoAndTitleWidget() => Center(
   child: Column(
     crossAxisAlignment: CrossAxisAlignment.center,
     children: [

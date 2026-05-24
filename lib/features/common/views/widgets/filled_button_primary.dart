@@ -5,7 +5,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 Widget filledButtonPrimary({
   required String title,
-  required VoidCallback onTap,
+  required VoidCallback? onTap,
 }) {
   return FilledButton(
     onPressed: onTap,
