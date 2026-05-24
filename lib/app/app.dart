@@ -4,7 +4,7 @@ import 'package:aqua_culture_app/features/common_role_features/auth/view_models/
 import 'package:aqua_culture_app/features/common_role_features/auth/view_models/otp_verification_provider.dart';
 import 'package:aqua_culture_app/features/common_role_features/auth/view_models/register_provider.dart';
 import 'package:aqua_culture_app/features/common_role_features/auth/view_models/set_password_provider.dart';
-import 'package:aqua_culture_app/features/farmer_role_features/main_nav_holder/view_models/main_nav_holder_provider.dart';
+import 'package:aqua_culture_app/features/farmer_role_features/main_nav_holder/view_models/farmer_main_nav_holder_provider.dart';
 import 'package:aqua_culture_app/features/common_role_features/welcome/views/screens/splash_screen.dart';
 
 import 'package:flutter/material.dart';
@@ -18,7 +18,7 @@ class AquaCultureApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        ChangeNotifierProvider(create: (_) => MainNavHolderProvider()),
+        ChangeNotifierProvider(create: (_) => FarmerMainNavHolderProvider()),
         ChangeNotifierProvider(create: (_) => AuthProvider()),
         ChangeNotifierProvider(create: (_) => RegisterProvider()),
         ChangeNotifierProvider(create: (_) => LoginProvider()),

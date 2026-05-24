@@ -7,6 +7,7 @@ import 'package:aqua_culture_app/features/common_role_features/auth/views/widget
 import 'package:aqua_culture_app/features/common_role_features/auth/views/widgets/top_section_logo_n_title_widget.dart';
 import 'package:aqua_culture_app/features/common_role_features/common/views/widgets/filled_button_primary.dart';
 import 'package:aqua_culture_app/features/common_role_features/common/views/widgets/input_form_field_widget.dart';
+import 'package:aqua_culture_app/features/farmer_role_features/main_nav_holder/views/screens/farmer_main_nav_holder_screen.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_material_design_icons/flutter_material_design_icons.dart';
@@ -98,7 +99,20 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
 
                 SizedBox(height: 36 - 26.h),
-                filledButtonPrimary(title: 'Login', onTap: () {}),
+                filledButtonPrimary(
+                  title: 'Login',
+                  onTap: () {
+                    if (authProvider.getIsFarmer) {
+                      Navigator.pushAndRemoveUntil(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => FarmerMainNavHolderScreen(),
+                        ),
+                        (route) => false,
+                      );
+                    }
+                  },
+                ),
                 SizedBox(height: 12.h),
                 RichText(
                   text: TextSpan(

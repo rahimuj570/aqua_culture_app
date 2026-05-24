@@ -2,21 +2,22 @@ import 'dart:math';
 
 import 'package:aqua_culture_app/app/constants/app_colors.dart';
 import 'package:aqua_culture_app/app/setup_network_caller.dart';
-import 'package:aqua_culture_app/features/farmer_role_features/main_nav_holder/view_models/main_nav_holder_provider.dart';
+import 'package:aqua_culture_app/features/farmer_role_features/main_nav_holder/view_models/farmer_main_nav_holder_provider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_material_design_icons/flutter_material_design_icons.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
 
-class MainNavHolderScreen extends StatefulWidget {
-  const MainNavHolderScreen({super.key});
+class FarmerMainNavHolderScreen extends StatefulWidget {
+  const FarmerMainNavHolderScreen({super.key});
 
   @override
-  State<MainNavHolderScreen> createState() => _MainNavHolderScreenState();
+  State<FarmerMainNavHolderScreen> createState() =>
+      _FarmerMainNavHolderScreenState();
 }
 
-class _MainNavHolderScreenState extends State<MainNavHolderScreen>
+class _FarmerMainNavHolderScreenState extends State<FarmerMainNavHolderScreen>
     with SingleTickerProviderStateMixin {
   bool isMenuOpen = false;
 
@@ -29,11 +30,7 @@ class _MainNavHolderScreenState extends State<MainNavHolderScreen>
 
   @override
   Widget build(BuildContext context) {
-    print('MainNavHolderScreen');
-    getNetworkCaller().getCall(
-      uri: 'https://jsonplaceholder.typicode.com/todos/1',
-    );
-    return Consumer<MainNavHolderProvider>(
+    return Consumer<FarmerMainNavHolderProvider>(
       builder: (context, provider, child) => Scaffold(
         body: Stack(
           alignment: Alignment.bottomCenter,
@@ -174,7 +171,7 @@ class _MainNavHolderScreenState extends State<MainNavHolderScreen>
     required int screenIndex,
   }) {
     bool isActive =
-        context.read<MainNavHolderProvider>().currentIndex == screenIndex;
+        context.read<FarmerMainNavHolderProvider>().currentIndex == screenIndex;
     return GestureDetector(
       // splashColor: Colors.transparent,
       // hoverColor: Colors.transparent,
@@ -182,7 +179,7 @@ class _MainNavHolderScreenState extends State<MainNavHolderScreen>
         setState(() {
           isMenuOpen = false;
         });
-        context.read<MainNavHolderProvider>().currentIndex = screenIndex;
+        context.read<FarmerMainNavHolderProvider>().currentIndex = screenIndex;
       },
       child: Container(
         color: Colors.transparent,
@@ -214,7 +211,7 @@ class _MainNavHolderScreenState extends State<MainNavHolderScreen>
     required int screenIndex,
   }) {
     bool isActive =
-        context.read<MainNavHolderProvider>().currentIndex == screenIndex;
+        context.read<FarmerMainNavHolderProvider>().currentIndex == screenIndex;
     return Material(
       color: Colors.transparent,
 
@@ -224,7 +221,8 @@ class _MainNavHolderScreenState extends State<MainNavHolderScreen>
         onTap: () {
           print('index: $screenIndex');
 
-          context.read<MainNavHolderProvider>().currentIndex = screenIndex;
+          context.read<FarmerMainNavHolderProvider>().currentIndex =
+              screenIndex;
 
           setState(() {
             isMenuOpen = false;
