@@ -6,6 +6,7 @@ class AppColors {
   static const Color scafoldColor = Color(0xffF0F4F8);
 
   static const Color green = Color(0xff28B67A);
+  static const Color greenLight = Color(0xffEAF8F2);
   static const Color red = Color(0xffE53E3E);
   static const Color redLight = Color(0xffFED7D7);
 
