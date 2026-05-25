@@ -230,7 +230,7 @@ class FarmerHomeScreen extends StatelessWidget {
                             ],
                           ),
                           RecentFarmLogCardWidget(),
-                          RecentFarmLogCardWidget(),
+                          RecentFarmLogCardWidget(isLastCard: true),
                         ],
                       ),
                     ),

@@ -4,7 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class RecentFarmLogCardWidget extends StatelessWidget {
-  const RecentFarmLogCardWidget({super.key});
+  final isLastCard;
+  const RecentFarmLogCardWidget({super.key, this.isLastCard = false});
 
   @override
   Widget build(BuildContext context) {
@@ -37,9 +38,9 @@ class RecentFarmLogCardWidget extends StatelessWidget {
             Text('1 day ago', style: TextStyle(fontSize: 12.sp)),
           ],
         ),
-        SizedBox(height: 10.h),
-        Divider(),
-        SizedBox(height: 4.h),
+        if (!isLastCard) SizedBox(height: 10.h),
+        if (!isLastCard) Divider(),
+        if (!isLastCard) SizedBox(height: 4.h),
       ],
     );
   }

@@ -37,6 +37,42 @@ class _FarmerMainNavHolderScreenState extends State<FarmerMainNavHolderScreen>
           children: [
             provider.screens[provider.currentIndex],
 
+            /// CHATBOT FLOATING BUTTON
+            Positioned(
+              right: 20.w,
+              bottom: 100.h,
+
+              child: GestureDetector(
+                onTap: () {
+                  print("Open chatbot");
+                },
+
+                child: Container(
+                  width: 60.w,
+                  height: 60.h,
+
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: AppColors.secondaryThemeColor,
+
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withValues(alpha: .2),
+                        blurRadius: 10,
+                        offset: const Offset(0, 4),
+                      ),
+                    ],
+                  ),
+
+                  child: Icon(
+                    MdiIcons.robotExcitedOutline,
+                    color: Colors.white,
+                    size: 30.r,
+                  ),
+                ),
+              ),
+            ),
+
             /// HALF CIRCLE MENU
             Positioned(
               bottom: -140.h,
