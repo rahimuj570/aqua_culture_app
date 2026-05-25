@@ -6,6 +6,7 @@ import 'package:aqua_culture_app/features/common_role_features/auth/view_models/
 import 'package:aqua_culture_app/features/common_role_features/auth/view_models/set_password_provider.dart';
 import 'package:aqua_culture_app/features/farmer_role_features/main_nav_holder/view_models/farmer_main_nav_holder_provider.dart';
 import 'package:aqua_culture_app/features/common_role_features/welcome/views/screens/splash_screen.dart';
+import 'package:aqua_culture_app/features/farmer_role_features/units/view_models/create_unit_provider.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -24,6 +25,7 @@ class AquaCultureApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => LoginProvider()),
         ChangeNotifierProvider(create: (_) => OtpVerificationProvider()),
         ChangeNotifierProvider(create: (_) => SetPasswordProvider()),
+        ChangeNotifierProvider(create: (_) => CreateUnitProvider()),
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,

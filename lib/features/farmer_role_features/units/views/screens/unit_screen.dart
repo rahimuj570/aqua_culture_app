@@ -1,6 +1,7 @@
 import 'package:aqua_culture_app/app/constants/app_colors.dart';
 import 'package:aqua_culture_app/features/common_role_features/common/views/widgets/filled_button_primary.dart';
 import 'package:aqua_culture_app/features/farmer_role_features/common/widgets/left_bordered_rounded_status_card.dart';
+import 'package:aqua_culture_app/features/farmer_role_features/units/views/screens/create_unit_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_material_design_icons/flutter_material_design_icons.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -86,7 +87,14 @@ class UnitScreen extends StatelessWidget {
                         style: IconButton.styleFrom(
                           backgroundColor: AppColors.appThemeColor,
                         ),
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => CreateUnitScreen(),
+                            ),
+                          );
+                        },
                         icon: Icon(Icons.add, color: Colors.white),
                       ),
                     ],
