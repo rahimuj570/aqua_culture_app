@@ -1,6 +1,5 @@
 import 'package:aqua_culture_app/features/farmer_role_features/home/views/screens/farmer_home_screen.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/foundation.dart';
+import 'package:aqua_culture_app/features/farmer_role_features/units/views/screens/unit_screen.dart';
 import 'package:flutter/material.dart';
 
 class FarmerMainNavHolderProvider extends ChangeNotifier {
@@ -14,7 +13,7 @@ class FarmerMainNavHolderProvider extends ChangeNotifier {
 
   final List<Widget> _screens = <Widget>[
     FarmerHomeScreen(),
-    Center(child: Text("Unit")),
+    UnitScreen(),
     Center(child: Text("Market")),
     Center(child: Text("Profile")),
     Container(color: Colors.red),

@@ -27,10 +27,11 @@ Widget inputFormFieldWidget({
             fontWeight: FontWeight.w500,
           ),
           children: [
-            TextSpan(
-              text: ' *',
-              style: TextStyle(color: Colors.red),
-            ),
+            if (isRequired)
+              TextSpan(
+                text: ' *',
+                style: TextStyle(color: Colors.red),
+              ),
           ],
         ),
       ),
