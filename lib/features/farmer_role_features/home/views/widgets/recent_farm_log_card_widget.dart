@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class RecentFarmLogCardWidget extends StatelessWidget {
-  final isLastCard;
+  final bool isLastCard;
   const RecentFarmLogCardWidget({super.key, this.isLastCard = false});
 
   @override

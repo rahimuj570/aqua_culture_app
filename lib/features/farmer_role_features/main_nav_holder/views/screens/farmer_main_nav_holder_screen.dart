@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:aqua_culture_app/app/constants/app_colors.dart';
+import 'package:aqua_culture_app/features/farmer_role_features/chatbot/views/screens/chatbot_screen.dart';
 import 'package:aqua_culture_app/features/farmer_role_features/main_nav_holder/view_models/farmer_main_nav_holder_provider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -44,7 +45,12 @@ class _FarmerMainNavHolderScreenState extends State<FarmerMainNavHolderScreen>
 
               child: GestureDetector(
                 onTap: () {
-                  print("Open chatbot");
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const ChatbotScreen(),
+                    ),
+                  );
                 },
 
                 child: Container(
