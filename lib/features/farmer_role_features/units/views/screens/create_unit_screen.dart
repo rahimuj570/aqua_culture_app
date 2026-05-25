@@ -399,7 +399,12 @@ class _CreateUnitScreenState extends State<CreateUnitScreen> {
                 SizedBox(height: 16.h),
                 filledButtonPrimary(title: 'Add Unit', onTap: () {}),
                 SizedBox(height: 16.h),
-                filledButtonSecondary(title: 'Cancel', onTap: () {}),
+                filledButtonSecondary(
+                  title: 'Cancel',
+                  onTap: () {
+                    Navigator.pop(context);
+                  },
+                ),
                 SizedBox(height: 60.h),
               ],
             ),
