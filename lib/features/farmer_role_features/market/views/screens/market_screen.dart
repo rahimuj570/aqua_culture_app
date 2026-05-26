@@ -92,9 +92,9 @@ class MarketScreen extends StatelessWidget {
                     ),
                   ),
                   SizedBox(height: 21.h),
-                  harvestCardWidget(),
+                  harvestCardWidget(context),
                   SizedBox(height: 16.h),
-                  harvestCardWidget(),
+                  harvestCardWidget(context),
 
                   SizedBox(height: 160.h),
                 ],

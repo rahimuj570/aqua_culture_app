@@ -3,7 +3,7 @@ import 'package:aqua_culture_app/features/farmer_role_features/market/views/widg
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-Widget harvestCardWidget() => Container(
+Widget harvestCardWidget(BuildContext context) => Container(
   padding: .all(20.r),
   decoration: BoxDecoration(color: Colors.white, borderRadius: .circular(14.r)),
   child: Column(
@@ -124,7 +124,7 @@ Widget harvestCardWidget() => Container(
         ],
       ),
       SizedBox(height: 13.h),
-      bidCardWidget(),
+      bidCardWidget(context),
     ],
   ),
 );

@@ -1,10 +1,11 @@
 import 'package:aqua_culture_app/app/constants/app_colors.dart';
 import 'package:aqua_culture_app/features/common_role_features/common/views/widgets/filled_button_primary.dart';
+import 'package:aqua_culture_app/features/farmer_role_features/market/views/screens/bid_details_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-Widget bidCardWidget() {
+Widget bidCardWidget(BuildContext context) {
   return Container(
     padding: .all(16.r),
     decoration: BoxDecoration(
@@ -93,7 +94,12 @@ Widget bidCardWidget() {
             Expanded(
               child: filledButtonPrimary(
                 title: 'View',
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => BidDetailsScreen()),
+                  );
+                },
                 prefixIcon: Icons.remove_red_eye_outlined,
                 backgroundColor: Colors.white,
                 foregroundColor: AppColors.appThemeColor,
